@@ -36,7 +36,7 @@ class SendOTP extends NotificationsSendOTP implements ShouldQueue
      * @param mixed $notifiable
      * @return MailMessage
      */
-    public function toMail($notifiable): MailMessage
+    public function toMail($notifiable)
     {
         return (new MailMessage)
             ->greeting('Hola!')
